@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://cdgs0syidmggj"]
+
+[ext_resource type="PackedScene" uid="uid://b1f18v7ibqrq1" path="res://player.tscn" id="1_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://d1ce5oeelkewu" path="res://pohon_sawit.tscn" id="2_h2yge"]
+
+[node name="Main" type="Node2D" unique_id=511720190]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=334843562]
+offset_right = 1155.0
+offset_bottom = 646.0
+
+[node name="Player" parent="." unique_id=1679798112 instance=ExtResource("1_0xm2m")]
+position = Vector2(580, 325)
+
+[node name="Camera2D" type="Camera2D" parent="Player" unique_id=1172058643]
+
+[node name="PohonSawit" parent="." unique_id=1387784420 instance=ExtResource("2_h2yge")]
+position = Vector2(418, 109)
+
+[node name="PohonSawit2" parent="." unique_id=1091802156 instance=ExtResource("2_h2yge")]
+position = Vector2(417, 227)
+
+[node name="PohonSawit3" parent="." unique_id=948773314 instance=ExtResource("2_h2yge")]
+position = Vector2(90, 105)
+
+[node name="PohonSawit4" parent="." unique_id=448281645 instance=ExtResource("2_h2yge")]
+position = Vector2(236, 324)
+
+[node name="PohonSawit5" parent="." unique_id=1271044770 instance=ExtResource("2_h2yge")]
+position = Vector2(469, 380)
+
+[node name="PohonSawit6" parent="." unique_id=946953509 instance=ExtResource("2_h2yge")]
+position = Vector2(615, 143)
