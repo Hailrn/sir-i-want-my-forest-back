@@ -49,12 +49,12 @@
   *(Sukses bikin scene, belum ada kodingan, senter masih bentuk lingkaran)*
 
 ### SPRINT 2: Pergerakan (Movement) & Senter
-- [ ] Koding Movement 8 arah (`Input.get_vector`).
-- [ ] Koding Sprint (Mengurangi Stamina).
-- [ ] Koding Senter Mode 1 (Ikut arah gerak).
-- [ ] Koding Senter Mode 2 (Ikut Mouse + Penalti Speed).
+- [X] Koding Movement 8 arah (`Input.get_vector`).
+- [X] Koding Sprint (Mengurangi Stamina).
+- [X] Koding Senter Mode 1 (Ikut arah gerak).
+- [X] Koding Senter Mode 2 (Ikut Mouse + Penalti Speed).
 - **Catatan Progress/Masalah Sprint 2:**
-  *(Tulis di sini jika ada error atau yang perlu diubah)*
+  *(asset ray flashlight masih sementara)*
 
 ### SPRINT 3: Sistem Atribut & Rumus (Core Logic)
 - [ ] Bikin Script `PlayerStats.gd` (Energi, Stamina, Kenyang, Kewarasan).

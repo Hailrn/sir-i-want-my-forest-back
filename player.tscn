@@ -1,18 +1,16 @@
 [gd_scene format=3 uid="uid://b1f18v7ibqrq1"]
 
+[ext_resource type="Script" uid="uid://dpcglrqjda7hy" path="res://player.gd" id="1_4flbx"]
+[ext_resource type="Texture2D" uid="uid://bd5fsu6fdofic" path="res://assets/flashlight_ray.png" id="2_onrkg"]
+
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_pfgwt"]
 size = Vector2(32, 32)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_48jqd"]
 size = Vector2(32, 32)
 
-[sub_resource type="Gradient" id="Gradient_sh265"]
-
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_48jqd"]
-gradient = SubResource("Gradient_sh265")
-fill = 1
-
 [node name="Player" type="CharacterBody2D" unique_id=1679798112]
+script = ExtResource("1_4flbx")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=644362936]
 texture = SubResource("PlaceholderTexture2D_pfgwt")
@@ -20,7 +18,6 @@ texture = SubResource("PlaceholderTexture2D_pfgwt")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=933423430]
 shape = SubResource("RectangleShape2D_48jqd")
 
-[node name="PointLight2D" type="PointLight2D" parent="." unique_id=1341632544]
-energy = 1.5
-texture = SubResource("GradientTexture2D_48jqd")
-texture_scale = 3.0
+[node name="PointLight2D" type="PointLight2D" parent="." unique_id=1379504464]
+texture = ExtResource("2_onrkg")
+offset = Vector2(40, 0.45)

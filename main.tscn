@@ -3,11 +3,21 @@
 [ext_resource type="PackedScene" uid="uid://b1f18v7ibqrq1" path="res://player.tscn" id="1_0xm2m"]
 [ext_resource type="PackedScene" uid="uid://d1ce5oeelkewu" path="res://pohon_sawit.tscn" id="2_h2yge"]
 
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_48jqd"]
+size = Vector2(15, 13)
+
 [node name="Main" type="Node2D" unique_id=511720190]
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=334843562]
-offset_right = 1155.0
-offset_bottom = 646.0
+[node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=268741394]
+position = Vector2(4.0000014, 244.99998)
+scale = Vector2(63.69, 63.69)
+color = Color(0.68557847, 0.7852542, 1, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=29323982]
+modulate = Color(0.56434906, 0.6568641, 1.347661e-06, 1)
+position = Vector2(566.5, 378.75)
+scale = Vector2(85.399994, 59.26923)
+texture = SubResource("PlaceholderTexture2D_48jqd")
 
 [node name="Player" parent="." unique_id=1679798112 instance=ExtResource("1_0xm2m")]
 position = Vector2(580, 325)
